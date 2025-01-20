@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>R&Z Training and Assessment Center Inc.</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #d1ebce;
+    }
+    .header {
+      background-color: #9ACD32;
+      width: 100%;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      box-sizing: border-box;
+      justify-content: space-between;
+    }
+    .logo {
+      width: 50px;
+      height: auto;
+    }
+  .comp{
+    font-size: 23px;
+    color: white;
+  }
+    .icons {
+      display: flex;
+      gap: 20px;
+    }
+    .icons a {
+      color:white;
+      text-decoration: none;
+      font-size: 30px;
+      padding: 10px;
+    }
+    .icon a:hover {
+      background-color: white;
+      border-radius: 5px;
+    }
+  
+  .updates{
+    text-align: center;
+  }
+  
+  .trud{
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 40px;
+  }
+  
+  .accredit{
+    background-color: #9ACD32;
+      width: 100%;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      box-sizing: border-box;
+      justify-content: space-between
+  }
+  .title{
+    font-size: 50px;
+  }
+    
+  
+  
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="logo.jpg" alt="Logo" class="logo">
+    <h1 class = "comp">R&Z Training and Assessment Center Inc.</h1>
+    <div class="icons">
+      <a href="Website.html">Home</a>
+      <a href="course.html">Courses</a>
+      <a href="apply.html">Apply and Enroll</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="about.html">About Us</a>
+    </div>
+  </div>
+  
+  <div class= "updates">
+    <div class = "events">
+      <a href="https://m.facebook.com/story.php?story_fbid=pfbid0W86veAoy1A78Xv4XW5Gsg9wfikFktMyYMvGNXpR55cQpLZDN6TtNWwWuU7fLWwY2l&id=100075863966724&mibextid=ZbWKwL"><img src = "Enroll.jpg" style = "width: 100; height: 50;"></a>
+    </div>
+    <div class = "events">
+      <a href="https://www.facebook.com/photo/?fbid=619178050620988&set=pcb.619178103954316"><img src = "bns.jpg" style = "width: 100; height: 50;"></a>
+    </div>
+    <div class = "events">
+      <a href="https://www.facebook.com/photo?fbid=619178073954319&set=pcb.619178103954316"><img src = "bls.jpg" style = "width: 100; height: 50;"></a>
+    </div>
+    
+    <a class="prev" onclick="plusEvents(-1)">&#10094;</a> 
+    <a class="next" onclick="plusEvents(1)">&#10095;</a>   
+  </div>
+  
+  <div class = trud> <h1>TRAINING UPDATES</h1></div>
+  <div class ="accredit"> <h1 class = "title">Accredited by TESDA</h1> <img src = "Tesda.png" </></div>
+<script>
+    let eventsIndex = 0;
+    showEvents();
+
+    function showEvents() {
+      let events = document.getElementsByClassName("events");
+      for (let i = 0; i < events.length; i++) {
+        events[i].style.display = "none";  
+      }
+      eventsIndex++;
+      if (eventsIndex > events.length) {eventsIndex = 1}    
+      events[eventsIndex-1].style.display = "block";  
+      setTimeout(showEvents, 3000); // Change image every 3 seconds
+    }
+
+    function plusEvents(n) {
+      eventsIndex += n;
+      if (eventsIndex > events.length) {eventsIndex = 1}
+      if (eventsIndex < 1) {eventsIndex = events.length}
+      for (let i = 0; i < events.length; i++) {
+        events[i].style.display = "none";  
+      }
+      events[eventsIndex-1].style.display = "block";
+    }
+  </script>
+</body>
+</html>

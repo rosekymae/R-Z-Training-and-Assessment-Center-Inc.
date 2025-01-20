@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>R&Z Training and Assessment Center Inc.</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #d1ebce;
+    }
+    .header {
+      background-color: #9ACD32;
+      width: 100%;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      box-sizing: border-box;
+      justify-content: space-between;
+    }
+    .logo {
+      width: 50px;
+      height: auto;
+    }
+    .comp {
+      font-size: 23px;
+      color: white;
+    }
+    .icons {
+      display: flex;
+      gap: 20px; /* Spacing between links */
+    }
+    .icons a {
+      color: white;
+      text-decoration: none;
+      font-size: 30px;
+      padding: 10px;
+    }
+    .icon a:hover {
+      background-color: white;
+      border-radius: 5px;
+    }
+    .container {
+      width: 80%;
+      max-width: 1000px;
+      margin: 40px auto; /* Center the container and add space from the header */
+      overflow: hidden;
+    }
+    .section {
+      margin: 20px 0;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .section h2 {
+      margin-top: 0;
+      text-align: center;
+    }
+    .title {
+      font-size: 50px;
+      text-align: center;
+      margin-top: 0;
+      text-decoration: underline;
+    }
+    .content {
+      font-size: 18px;
+      text-align: justify;
+    }
+    .enum {
+      font-size: 50px;
+      margin-bottom: 50px;
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+    }
+    .list {
+      display: none;
+      position: absolute;
+      min-width: 300px;
+      box-shadow: 0px 8px 16px 0px;
+      z-index: 1;
+    }
+    .list p {
+      color: black;
+      padding: 12px;
+      text-decoration: none;
+      display: block;
+    }
+    .enum:hover .list {
+      display: block;
+    }
+    .qual {
+      font-size: 80px;
+      margin-bottom: 50px;
+    }
+    .requirements {
+      text-align: left-justified;
+      margin-top: 70px;
+    }
+    .pay {
+      font-size: 80px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="logo.jpg" alt="Logo" class="logo">
+    <h1 class="comp">R&Z Training and Assessment Center Inc.</h1>
+    <div class="icons">
+      <a href="Website.html">Home</a>
+      <a href="course.html">Courses</a>
+      <a href="apply.html">Apply and Enroll</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="about.html">About Us</a>
+    </div>
+  </div>
+  
+  <div class="container">
+    <section class="section">
+      <h2 class="title">Qualifications</h2>
+      <div class="content">
+        <p>At least Junior High School Graduate</p>
+      </div>
+    </section>
+    <section class="section">
+      <h2 class="title">Requirements</h2>
+      <div class="content">
+        <p>(2 copies each)</p>
+        <p>Birth Certificate</p>
+        <p>TOR (for college graduates)</p>
+        <p>Form 136 (High School Graduate)</p>
+        <p>Government Issued ID</p>
+        <p>Vaccine Card</p>
+        <p>2x2 picture (corporate attire)</p>
+        <p>Certificate of Employment</p>
+      </div>
+    </section>
+    <section class="section">
+      <h2 class="title">Tuition Fees</h2>
+      <div class="content">
+        <p>1. Cash</p>
+        <p>2. Installment</p>
+        <p>Message/email us for the itemized list of payments</p>
+      </div>
+    </section>
+  </div>
+  
+<script>
+    function toggleList(id) {
+      var list = document.getElementById(id);
+      if (list.style.display === "none" || list.style.display === "") {
+        list.style.display = "block";
+      } else {
+        list.style.display = "none";
+      }
+    }
+</script>
+  
+</body>
+</html>
